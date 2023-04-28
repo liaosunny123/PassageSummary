@@ -1,0 +1,2 @@
+# PassageSummary
+PassageSummary是一个基于Gpt工作的Api，提供文章总结，话题提取等若干总结功能
