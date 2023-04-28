@@ -1,0 +1,44 @@
+### 询问文本
+POST http://127.0.0.1:8000/passage/{{hash}}
+Accept: application/json
+Content-Type: application/json
+
+{
+	"action":"ask",
+	"param":"Which passage is mentioned that was written by Lu Xun.",
+	"token":"{{token}}"
+}
+
+
+### 得到话题
+POST http://127.0.0.1:8000/passage/{{hash}}
+Accept: application/json
+Content-Type: application/json
+
+{
+	"action":"topic",
+	"token":"{{token}}"
+}
+
+
+### 判断文章与话题的相关度
+POST http://127.0.0.1:8000/passage/{{hash}}
+Accept: application/json
+Content-Type: application/json
+
+{
+	"action":"getTopicRelative",
+	"param": "游戏,鲁迅,教育",
+	"token":"{{token}}"
+}
+
+
+### 总结文章
+POST http://127.0.0.1:8000/passage/{{hash}}
+Accept: application/json
+Content-Type: application/json
+
+{
+	"action":"summary",
+	"token":"{{token}}"
+}
